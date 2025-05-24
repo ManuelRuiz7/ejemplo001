@@ -1,0 +1,44 @@
+municipio,alcalde
+Abasolo,Yazmín Alejandra Saldaña Pérez             
+Aldama,María Noemi Sosa Villareal
+Altamira,Armando Martínez Manríquez
+Antiguo Morelos,Evangelina Ávila Cabriales
+Burgos,Marco Polo Garza Martínez
+Bustamante,Maricela Rodríguez González
+Camargo,Ernestina Perales Ortiz
+Casas,Jorge Humberto Hinojosa García
+Ciudad Madero,Erasmo González Robledo
+Cruillas,Diana Vanessa Leal López
+Güémez,José Lorenzo Morales Amaro
+Gómez Farías,Frank Yussef de León Ávila
+González,Miguel Alejandro Zuñiga Rodríguez
+Guerrero,Laura Verónica Peña Martínez
+Gustavo Díaz Ordaz,Nataly García Díaz
+Hidalgo,Praxedis Guajardo Reyna
+Jaumave,Manuel Báez Martínez
+Jiménez,Corina Esther Garza Arreola
+Llera,Moisés Antonio Borjon Olvera
+Mainero,María Dolores Mansilla Huerta
+El Mante,Martha Patricia Chio de la Garza
+Matamoros,José Alberto Granados Favila
+Méndez,Juan Mendoza Fuerte
+Mier,Adriana Hinojosa Ibañez
+Miguel Alemán,Ramiro Cortez Barrera
+Miquihuana,Gladis Magalis Vargas Rangel
+Nuevo Laredo,Carmen Lilia Caturosas Villareal
+Nuevo Morelos,Yaneth Cristal Najera Cedillo
+Ocampo,Melchor Budarth Báez
+Padilla,Carlos Ernesto Quintanilla Selvera
+Palmillas,Sindy Paoleth Monita Ramírez
+Reynosa,Carlos Víctor Peña Ortiz
+Río Bravo,Miguel Ángel Almaraz Maldonado
+San Carlos,Gaudisela Ramírez Zavala
+San Fernando,Verónica Adriana Aguirre de los Santos
+San Nicolás,Analy Beverra Resendez
+Soto la Marina,Glynnis Georgina Jiménez Vázquez
+Tampico,Mónica Villareal
+Tula,René Lara Cisneros
+Valle Hermoso,Alberto Alanís Villareal 
+Victoria,Eduardo Abraham Gattás
+Villagrán,María Isabel Ríos Tovar
+Xicoténcatl,Mariela López Sosa
