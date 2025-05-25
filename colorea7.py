@@ -1,13 +1,7 @@
 import streamlit as st
-import geopandas as gpd
-import folium
-from shapely.geometry import Polygon
-from streamlit_folium import st_folium
-import pandas as pd
-import streamlit.components.v1 as components
 
-# --- Polyfill para navegadores antiguos que no tienen String.replaceAll ---
-components.html("""
+# polyfill **arriba del todo**
+st.markdown("""
 <script>
 if (!String.prototype.replaceAll) {
   String.prototype.replaceAll = function(search, replace) {
@@ -15,7 +9,13 @@ if (!String.prototype.replaceAll) {
   };
 }
 </script>
-""", height=0, width=0)
+""", unsafe_allow_html=True)
+
+import geopandas as gpd
+import folium
+from shapely.geometry import Polygon
+from streamlit_folium import st_folium
+import pandas as pd
 
 # Cargar municipios
 gdf = gpd.read_file("municipios.geojson")
@@ -77,3 +77,4 @@ folium.GeoJson(
 
 # Mostrar mapa
 st_folium(m, width=700, height=500)
+
