@@ -4,6 +4,18 @@ import folium
 from shapely.geometry import Polygon
 from streamlit_folium import st_folium
 import pandas as pd
+import streamlit.components.v1 as components
+
+# --- Polyfill para navegadores antiguos que no tienen String.replaceAll ---
+components.html("""
+<script>
+if (!String.prototype.replaceAll) {
+  String.prototype.replaceAll = function(search, replace) {
+    return this.split(search).join(replace);
+  };
+}
+</script>
+""", height=0, width=0)
 
 # Cargar municipios
 gdf = gpd.read_file("municipios.geojson")
