@@ -5,24 +5,23 @@ from shapely.geometry import Polygon
 from streamlit_folium import st_folium
 import pandas as pd
 
-# --- Control de acceso ---
-def login():
+# Inicializar sesión
+if "logged_in" not in st.session_state:
+    st.session_state.logged_in = False
+
+# Formulario de login
+if not st.session_state.logged_in:
     st.title("Ingreso")
     user = st.text_input("Usuario")
     password = st.text_input("Contraseña", type="password")
+    login_button = st.button("Entrar")
 
-    if st.button("Entrar"):
-        if user == "admin" and password == "1234":  # <- Cambia aquí tus credenciales
-            st.session_state["logged_in"] = True
-            st.experimental_rerun()
+    if login_button:
+        if user == "admin" and password == "1234":  # Cambiar a tus credenciales reales
+            st.session_state.logged_in = True
+            st.success("Bienvenido")
         else:
             st.error("Usuario o contraseña incorrectos")
-
-if "logged_in" not in st.session_state:
-    st.session_state["logged_in"] = False
-
-if not st.session_state["logged_in"]:
-    login()
 else:
     st.title("Mapa con Alcaldes")
 
@@ -98,6 +97,6 @@ else:
     # Mostrar mapa
     st_folium(m, width=700, height=500)
 
+    # Botón para cerrar sesión
     if st.button("Cerrar sesión"):
-        st.session_state["logged_in"] = False
-        st.experimental_rerun()
+        st.session_state.logged_in = False
